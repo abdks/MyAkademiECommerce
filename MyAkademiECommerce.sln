@@ -31,13 +31,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Photostock", "Photostock", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comment", "Comment", "{44772924-4293-4195-AC15-B3F7613CA173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAkademiECommerce.Services.Catalog", "MyAkademiECommerce.Services.Catalog\MyAkademiECommerce.Services.Catalog.csproj", "{25314B73-DF05-4706-9EBF-2254C41FAD8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAkademiECommerce.Services.Catalog", "MyAkademiECommerce.Services.Catalog\MyAkademiECommerce.Services.Catalog.csproj", "{25314B73-DF05-4706-9EBF-2254C41FAD8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAkademiECommerce.Shared", "Shared\MyAkademiECommerce.Shared\MyAkademiECommerce.Shared.csproj", "{5A4EF7A4-992E-42E3-90A2-6FAF5FC74D04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAkademiECommerce.Shared", "Shared\MyAkademiECommerce.Shared\MyAkademiECommerce.Shared.csproj", "{5A4EF7A4-992E-42E3-90A2-6FAF5FC74D04}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dtos", "Dtos", "{513CD464-5B94-4B3D-A3F6-D4C6E221ADA3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5565F7BB-23A7-430E-A9BA-495A2659A47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAkademiECommerce.Discount", "Services\Discount\MyAkademiECommerce.Discount\MyAkademiECommerce.Discount.csproj", "{E8369710-A2E1-4FD9-B909-78859C2D795D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{5A4EF7A4-992E-42E3-90A2-6FAF5FC74D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A4EF7A4-992E-42E3-90A2-6FAF5FC74D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A4EF7A4-992E-42E3-90A2-6FAF5FC74D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8369710-A2E1-4FD9-B909-78859C2D795D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8369710-A2E1-4FD9-B909-78859C2D795D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8369710-A2E1-4FD9-B909-78859C2D795D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8369710-A2E1-4FD9-B909-78859C2D795D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{5A4EF7A4-992E-42E3-90A2-6FAF5FC74D04} = {5D189019-B728-4111-AA7A-93FB86BE177A}
 		{513CD464-5B94-4B3D-A3F6-D4C6E221ADA3} = {5D189019-B728-4111-AA7A-93FB86BE177A}
 		{5565F7BB-23A7-430E-A9BA-495A2659A47E} = {5D189019-B728-4111-AA7A-93FB86BE177A}
+		{E8369710-A2E1-4FD9-B909-78859C2D795D} = {B25540D0-E911-4CB6-A084-E607E3FE8496}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C059D84-B707-48C0-8B50-FDBF6EA77EF3}

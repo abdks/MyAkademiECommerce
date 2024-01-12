@@ -9,13 +9,13 @@ namespace MyAkademiECommerce.Services.Catalog.Mapping
     {
         public GeneralMapping()
         {
-            CreateMap<Category, ResultCategoryDto>();
-            CreateMap<ResultCategoryDto, Category>();
-            CreateMap<Category,CreateCategoryDto>();
-            CreateMap<Category,UpdateCategoryDto>();
-            CreateMap<Product,ResultProductDto>();
-            CreateMap<Product,CreateProductDto>();
-            CreateMap<Product,UpdateProductDto>();
+            CreateMap<Category, ResultCategoryDto>().ReverseMap();
+            CreateMap<Category,CreateCategoryDto>().ReverseMap();
+            CreateMap<UpdateCategoryDto, Category>().ReverseMap();
+            
+            CreateMap<Product,ResultProductDto>().ReverseMap();
+            CreateMap<Product,CreateProductDto>().ReverseMap();
+            CreateMap<Product,UpdateProductDto>().ReverseMap();
 
         }
     }
