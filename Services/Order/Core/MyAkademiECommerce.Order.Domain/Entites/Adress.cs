@@ -8,7 +8,7 @@ namespace MyAkademiECommerce.Order.Domain.Entites
 {
    public class Adress
     {
-        public int AddressID { get; set; }
+        public int AdressID { get; set; }
         public string UserID { get; set; }
         public string District { get; set; }
         public string City { get; set; }

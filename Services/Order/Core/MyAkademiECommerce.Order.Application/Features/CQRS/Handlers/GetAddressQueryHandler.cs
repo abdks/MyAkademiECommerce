@@ -22,7 +22,7 @@ namespace MyAkademiECommerce.Order.Application.Features.CQRS.Handlers
             var values = await _repository.GetAllAsync();
             return values.Select(x=>new GetAddressQueryResult
                 {
-                AddressID = x.AddressID,
+                AddressID = x.AdressID,
                 City = x.City,
                 Detail = x.Detail,
                 District = x.District,
