@@ -12,7 +12,7 @@ namespace MyAkademiECommerce.IdentityServer
     {
         public static IEnumerable<ApiResource> ApiResources => new ApiResource[]
         {
-          new ApiResource("ResourceCatalog"){Scopes={"catalogFullPermission"}},
+          new ApiResource("ResourceCatalog"){Scopes={"CatalogFullPermission"}},
           new ApiResource("ResourceReadCatalog"){Scopes={"CatalogReadPermission"}},
           new ApiResource("ResourceDiscount"){Scopes={"DiscountReadPermission","DiscountCreatePermission"}},
           new ApiResource("ResourceDiscountFull"){Scopes={"DiscountFullPermission"}},

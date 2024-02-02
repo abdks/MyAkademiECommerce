@@ -1,5 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MyAkademiECommerce.IdentityServer.Dtos;
+using MyAkademiECommerce.IdentityServer.Models;
+using System.Threading.Tasks;
 
 namespace MyAkademiECommerce.IdentityServer.Controllers
 {
@@ -7,5 +11,33 @@ namespace MyAkademiECommerce.IdentityServer.Controllers
     [ApiController]
     public class RegistersController : ControllerBase
     {
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public RegistersController(UserManager<ApplicationUser> userManager)
+        {
+            _userManager = userManager;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UserRegister(UserRegisterDto userRegisterDto)
+        {
+            var values = new ApplicationUser()
+            {
+                UserName = userRegisterDto.Username,
+                Email = userRegisterDto.Mail,
+                Surname = userRegisterDto.Surname,
+                Name = userRegisterDto.Name,
+                City = userRegisterDto.City
+            };
+            var result = await _userManager.CreateAsync(values, userRegisterDto.Password);
+            if (result.Succeeded)
+            {
+                return Ok("Kullanıcı Eklendi!");
+            }
+            else
+            {
+                return Ok("Bir hata oluştu!");
+            }
+        }
     }
 }

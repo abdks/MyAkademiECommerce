@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyAkademiECommerce.Services.Catalog.Dtos.CategoryDtos;
@@ -6,6 +7,7 @@ using MyAkademiECommerce.Services.Catalog.Services.CategoryServices;
 
 namespace MyAkademiECommerce.Services.Catalog.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase
